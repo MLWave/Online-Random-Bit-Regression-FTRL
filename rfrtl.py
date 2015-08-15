@@ -50,10 +50,11 @@
   oFTRL was originally a purely categorical classifier. Through bit vectorizing the features with random linear functions it can now 
   handle features which were originally floats or numerical. Another benefit is the added boost for none-linearity in problems.
   
-  As we always know the length of our binary representation, we do not need the hashing trick. We can simply sparse encode:
+  As we always know the length of our binary representation (we are using this for dense tall datasets, not sparse datasets like text), 
+  we do not need the hashing trick for now. We can simply sparse encode:
   
-  "11101" becomes "1:1 2:1 3:1 5:1"
-  
+  "11101" becomes "1:1 2:1 3:1 5:1".
+
   We call this modified algorithm "Randomly Follow the Regularized Leader"
 """
 import numpy as np
