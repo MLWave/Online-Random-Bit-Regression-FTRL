@@ -2,7 +2,7 @@
 
 This is a class containing a binary classifier for online machine learning. It employs approaches based on Random Bit Regression and the FTRL-Proximal algorithm
 
-#### **rftrl**.*RandomLeaderClassifier*(alpha=0.1, beta=1., l1=0., l2=1., nr_projections=10000, max_projections=0, subsample_projections=1., size_projections=3, random_state=0, verbose=0)
+##### rftrl.**RandomLeaderClassifier**(alpha=0.1, beta=1., l1=0., l2=1., nr_projections=10000, max_projections=0, subsample_projections=1., size_projections=3, random_state=0, verbose=0)
 					
 ## Parameters
 
