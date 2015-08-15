@@ -2,22 +2,22 @@
 
 This is a class containing a binary classifier for online machine learning. It employs approaches based on Random Bit Regression and the FTRL-Proximal algorithm
 
-### **rftrl**.*RandomLeaderClassifier*(alpha=0.1, beta=1., l1=0., l2=1., nr_projections=10000, max_projections=0, subsample_projections=1., size_projections=3, random_state=0, verbose=0)
+#### **rftrl**.*RandomLeaderClassifier*(alpha=0.1, beta=1., l1=0., l2=1., nr_projections=10000, max_projections=0, subsample_projections=1., size_projections=3, random_state=0, verbose=0)
 					
 ## Parameters
 
 Parameter | Description
 --- | ---
-alpha. | Float. Learning Rate.
-beta. | Float. Smoothing parameter for adaptive learning rate
-l1. | Float. L1 Regularization
-l2. | Float. L2 Regularization
-nr_projections. | Int. Number of random linear projections to create
+alpha. | Float. Learning Rate. *Default = 0.1*
+beta. | Float. Smoothing parameter for adaptive learning rate. *Default = 1.*
+l1. | Float. L1 Regularization. *Default = 0.1*
+l2. | Float. L2 Regularization. *Default = 1.0*
+nr_projections. | Int. Number of random linear projections to create. *Default = 10000*
 max_projections. | Int. Not implemented.
-subsample_projections. | Float. Uses subsampling when making a first pass to create the random thresholds. This is more memory friendly for larger datasets.
-size_projections. | Int. Number of (feature_value * random_weight) to use in the random linear functions.
-random_state. | Int. Seed for replication.
-Verbose. | Int. Verbosity of classifier. Default=0.
+subsample_projections. | Float. Uses subsampling when making a first pass to create the random thresholds. This is more memory friendly for larger datasets. *Default = 1.*
+size_projections. | Int. Number of (feature_value * random_weight) to use in the random linear functions. *Default = 3*
+random_state. | Int. Seed for replication. *Default = 0*
+Verbose. | Int. Verbosity of classifier. *Default = 0*
 
 ## Usage
 
