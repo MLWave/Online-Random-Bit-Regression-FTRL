@@ -1,15 +1,20 @@
 """
   Author: Triskelion, HJ van Veen, info@mlwave.com
   
-  Description:  Creates 3 classifiers. 
-				Experiments with ensembling their predictions, and studies variance.
-				Uses digits dataset (the "0"'s and "1"'s)
+  Description:  
+  
+  Creates 3 classifiers. 
+  Experiments with ensembling their predictions, and studies variance.
+  Uses digits dataset (the "0"'s and "1"'s)
 				
-				Seems that: One 'overfitted' classifier can improve the ensemble
-							Random_state change shows more difference than Random Forest
-							Averaging 3 classifiers with different random state increases robustness.
-							We can approach SVM accuracy
-							Very similar to Vowpal Wabbit's -q and --cubic
+  Seems that: 
+  
+  One 'overfitted' classifier can improve the ensemble.
+  Random_state change shows more difference than Random Forest.
+  Averaging 3 classifiers with different random state increases robustness.
+  We can approach SVM accuracy.
+  Weighing the predictions by the 3 classifier's progressive validation loss can be better than unweighted average.
+  Very similar to Vowpal Wabbit's -q and --cubic.
   
 """
 from sklearn.datasets import load_digits
