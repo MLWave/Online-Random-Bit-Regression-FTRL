@@ -32,6 +32,6 @@
   Todo:
     
 	Clean up code.
-	Make much master.
+	Make much faster.
 	Acquire probabilistic pseudo-random supercomputer
 """
